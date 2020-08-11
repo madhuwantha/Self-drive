@@ -3,6 +3,7 @@ import numpy as np
 import imutils
 from imutils.video import VideoStream
 
+
 #cap = cv2.VideoCapture(0)
 
 resolution = (1024, 1024)

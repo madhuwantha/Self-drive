@@ -84,6 +84,15 @@ class Movement(object):
 		GPIO.output(RB, GPIO.LOW)
 		GPIO.output(LF, GPIO.LOW)
 
+	def forward(rSpeed, lSpeed):
+		GPIO.output(RF, GPIO.HIGH)
+		GPIO.output(RB, GPIO.LOW)
+		GPIO.output(LF, GPIO.HIGH)
+		GPIO.output(LB, GPIO.LOW)
+
+		RPWM.ChangeDutyCycle(rSpeed)
+		LPWM.ChangeDutyCycle(lSpeed)
+
     
     
         
